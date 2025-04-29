@@ -1,4 +1,9 @@
+
+opencv-python
 fastapi
 uvicorn
+nest-asyncio
+pyngrok
+python-multipart
 pillow
-opencv-python
+
