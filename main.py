@@ -7,6 +7,7 @@ from fastapi.responses import JSONResponse
 from pyngrok import ngrok
 import nest_asyncio
 
+ngrok.set_auth_token(os.getenv("NGROK_AUTH_TOKEN"))
 
 
 app = FastAPI()
