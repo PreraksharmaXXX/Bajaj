@@ -34,13 +34,13 @@ async def get_lab_tests(file: UploadFile = File(...)):
 
 nest_asyncio.apply()
 
-public_url = ngrok.connect(8001)
+public_url = ngrok.connect(8002)
 print(f"🔗 Public URL: {public_url}/docs")
 
 import uvicorn
 from threading import Thread
 
 def run():
-    uvicorn.run(app, host="0.0.0.0", port=8001)
+    uvicorn.run(app, host="0.0.0.0", port=8002)
 
 Thread(target=run).start()
